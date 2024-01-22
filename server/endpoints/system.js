@@ -76,8 +76,8 @@ function systemEndpoints(app) {
       const results = await SystemSettings.currentSettings();
       response.status(200).json({ results });
     } catch (e) {
-      console.log(e.message, e);
-      response.sendStatus(500).end();
+      console.error(`Error occurred while processing request: ${e.message}`, e);
+      response.status(500).json({ message: 'Internal server error', error: e.message });
     }
   });
 
