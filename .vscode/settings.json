@@ -58,5 +58,10 @@
     "Zilliz"
   ],
   "eslint.experimental.useFlatConfig": true,
-  "docker.languageserver.formatter.ignoreMultilineInstructions": true
+  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#432619",
+    "titleBar.activeBackground": "#5D3623",
+    "titleBar.activeForeground": "#FCF9F7"
+  }
 }
